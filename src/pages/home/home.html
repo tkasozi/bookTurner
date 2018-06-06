@@ -1,14 +1,37 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      {{title}}
     </ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-card>
+
+    <ion-card-header>
+      <h1>
+          My So Called Life
+      </h1>
+    </ion-card-header>
+
+    <ion-card-content col-8>
+      <!-- Add card content here! -->
+      <div style="align-content:center;">
+          <p>
+            <img col-sm-2 src="https://lh3.googleusercontent.com/qMkMqT-ISuwPkwgHIFHillC2U-P5MRaXXsKUkEJ2OzeIgpOjXFOlJBj-SWniI_R4nFk2cTwdfJmZPqNgpcTCXqAOd9bSJPJv-fveI6dPIbjf_tgSokB85sTdUrhToqZFbgXuokr709Eml8oQxLKGoemKeRNhrpRK3VSkSxV324uS7CWsjtmOebzVp72PVQZ7fCx4GJ8o0Yn8E4k_RcAeXmwHK9uLaWc5090I4U2yR8Cw6H0uTfEzYw_O-xrgnopaS4KF9MnNgrBa4fDgz6VDq3FEKdbHFw09OFoTui_t8JQdFczpgynxMDPUT7X-rehjRpj8sCvgnBumeLv8qOllSj06NdYrnUJje8DIF3HxPPHmmapmSi2e8Zutpgv5Kl4GgfGRvY6GeY3K52yEOWuUD8EGapwX_E1fTSZaJx33AHh_Y7uXK0WJpzkBU3HJTXVTJdKAG2GV8l_eVeJdKBBK2LF6Ehci4xC-jk2DWLOWFhzm40fCLaHf8F9BTHbjuU4SzD5FYvylbHVdxa_hOFHIziJvHD9p0xjdOtE_LNrW5kb5rtpVeXAK4_5YUHKWc4LygCQBBTg9wEeJciIC9GDSPHFi_Apt2hBX5TA2FKKzUSq7OHorHxEH3G11rFzH0CwrbXsxaiImnS8cQldJac2Y_aNdnz5G2EZy=w516-h680-no"> By: Tkasozi
+          </p>
+      </div>
+    </ion-card-content>
+
+  </ion-card>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <button ion-button round clear (click)="lastPage()" icon-start id="btn1">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+    <button ion-button round clear (click)="nextPage()" icon-start id="btn2">
+      <ion-icon name="arrow-forward"></ion-icon>
+    </button>
+  </ion-toolbar>
+</ion-footer>

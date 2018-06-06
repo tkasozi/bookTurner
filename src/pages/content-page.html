@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{title}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      {{title}}
+    </ion-card-header>
+
+    <ion-card-content>
+      <table col-12>
+        <tr>
+          <td>Introduction</td>
+          <td>1
+            <button ion-button clear (click)="goTo('intro')">
+                <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>The told Story</td>
+          <td> 2
+            <button ion-button clear (click)="goTo('chp1')">
+                    <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>The Last Chapter</td>
+          <td>3
+            <button ion-button clear (click)="goTo('chp2')">
+                <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <button ion-button round clear (click)="lastPage()" icon-start id="btn1">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+    <button ion-button round clear (click)="nextPage()" icon-start id="btn2">
+      <ion-icon name="arrow-forward"></ion-icon>
+    </button>
+  </ion-toolbar>
+</ion-footer>
